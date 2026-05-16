@@ -1,0 +1,169 @@
+
+:root {
+    --verde-bosque: #1b4332;   /* Verde oscuro muy elegante para títulos y texto principal */
+    --verde-hoja: #2d6a4f;     /* Verde intermedio para headers y elementos fuertes */
+    --verde-vivo: #40916c;     /* Verde más claro para destacar enlaces o bordes */
+    --verde-fondo: #f4f9f4;    /* Un blanco con un tinte sutil verde, muy limpio */
+    --blanco: #ffffff;
+    --oscuro-suave: #2d312e;   /* Color grisáceo/verde oscuro para que leer texto largo no canse */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--verde-fondo);
+    color: var(--oscuro-suave);
+    line-height: 1.7;
+    padding: 0;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--verde-hoja);
+    color: var(--blanco);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--verde-vivo);
+}
+
+
+section {
+    background-color: var(--blanco);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    border-left: 5px solid var(--verde-vivo); /* Detalle estético verde al costado de cada sección */
+}
+
+section h2 {
+    color: var(--verde-bosque);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #eaeea1; /* Subrayado sutil */
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+}
+
+
+strong {
+    color: var(--verde-hoja);
+}
+
+
+article {
+    background-color: #fafdfa;
+    border: 1px solid #e1ebe1;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+article h3 {
+    color: var(--verde-hoja);
+    margin-bottom: 5px;
+}
+
+
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--verde-bosque);
+}
+
+dd {
+    color: var(--oscuro-suave);
+}
+
+aside {
+    background-color: var(--verde-bosque);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+aside a {
+    color: #ffd166; /* Un color amarillo cálido para que el link resalte fuerte */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: var(--blanco);
+}
+
+
+footer {
+    background-color: #2d312e;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--verde-vivo);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
