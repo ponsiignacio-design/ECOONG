@@ -24,5 +24,33 @@
         <a href="#"><i class="fa fa-phone"></i> 1165432387</a><br>
         <a href="#"><i class="fa fa-envelope"></i> ecohuella@mail.com</a>
     </main>
+
+    <section>
+        <h3>Colaborá con nosotros</h3>
+        <p>Estamos siempre buscando colaboradores para nuestros proyectos. <strong>¡Únete a nuestro equipo!</p>
+            
+            <form action="/enviar" method="post">
+                
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="programa">Programa de interés:</label><br>
+                <select id="programa" name="programa" required>
+                    <option value="">Selecciona un programa</option>
+                    <option value="pulmones-escolares">Pulmones Escolares</option>
+                    <option value="guardianes-del-rio">Guardianes del Río</option>
+                    <option value="taller-de-compostaje">Taller de Compostaje</option>
+                </select><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+    </section>
 </body>
 </html>

@@ -167,3 +167,9 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+img {
+    margin: 15px 0;
+    max-width:40rem;
+    max-height: 35rem;
+}
