@@ -173,3 +173,72 @@ img {
     max-width:40rem;
     max-height: 35rem;
 }
+
+/*
+   FLEXBOX AVANZADO
+ */
+
+.equipo-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.equipo-flex article {
+    flex: 1 1 300px;
+    margin-top: 0;
+}
+
+/* 
+   POSICIONAMIENTO
+ */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 
+   FLEXBOX AVANZADO
+ */
+
+.equipo-flex{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.equipo-flex article{
+    flex:1 1 300px;
+}
+
+/* 
+   POSICIONAMIENTO
+ */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* 
+   PERSONALIZACIÓN BOOTSTRAP
+ */
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.navbar{
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.badge{
+    font-size:0.9rem;
+}

@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | EcoHuellas ONG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>EcoHuellas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">EcoHuellas</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programas.html">Programas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
     <main>
         <section>
@@ -65,19 +85,24 @@
         </section>
 
         <section>
-            <h2>Nuestro Equipo</h2>
-            <article>
-                <h3>Lic. Martina Paz</h3>
-                <p><em>Directora Ejecutiva</em></p>
-                <p>Especialista en gestión ambiental con más de 10 años de experiencia.</p>
-            </article>
+    <h2>Nuestro Equipo</h2>
 
-            <article>
-                <h3>Juan Gómez</h3>
-                <p><em>Coordinador de Voluntariado</em></p>
-                <p>Encargado de organizar las jornadas de plantación masiva.</p>
-            </article>
-        </section>
+    <div class="equipo-flex">
+
+        <article>
+            <h3>Lic. Martina Paz</h3>
+            <p><em>Directora Ejecutiva</em></p>
+            <p>Especialista en gestión ambiental con más de 10 años de experiencia.</p>
+        </article>
+
+        <article>
+            <h3>Juan Gómez</h3>
+            <p><em>Coordinador de Voluntariado</em></p>
+            <p>Encargado de organizar las jornadas de plantación masiva.</p>
+        </article>
+
+    </div>
+</section>
     </main>
 
     <aside>
